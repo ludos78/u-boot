@@ -1,0 +1,12 @@
+if TARGET_QNAP_TS212
+
+config SYS_BOARD
+	default "ts212"
+
+config SYS_VENDOR
+	default "qnap"
+
+config SYS_CONFIG_NAME
+	default "qnap_ts212"
+
+endif

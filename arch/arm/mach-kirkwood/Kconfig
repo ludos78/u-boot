@@ -246,6 +246,13 @@ config TARGET_T5325
 	select KIRKWOOD_COMMON
 	select KIRKWOOD_CONSOLE_COMMON
 
+config TARGET_QNAP_TS212
+	bool "QNAP TS212 Board"
+	select FEROCEON_88FR131
+	select KW88F6281
+	select KIRKWOOD_COMMON
+	select KIRKWOOD_CONSOLE_COMMON
+
 endchoice
 
 config SYS_SOC
@@ -284,6 +291,7 @@ source "board/Seagate/dockstar/Kconfig"
 source "board/Seagate/goflexhome/Kconfig"
 source "board/Seagate/nas220/Kconfig"
 source "board/dell/m300/Kconfig"
+source "board/qnap/ts212/Kconfig"
 source "board/Marvell/netgear_ms2110/Kconfig"
 source "board/Seagate/nas220/Kconfig"
 source "board/tbs/moi_plus/Kconfig"
