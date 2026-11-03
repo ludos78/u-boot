@@ -161,6 +161,12 @@ config TARGET_SBx81LIFXCAT
 	select KW88F6281
 	select KIRKWOOD_COMMON
 
+config TARGET_QNAP_TS212
+	bool "QNAP TS212"
+	select FEROCEON_88FR131
+	select KW88F6281
+	select KIRKWOOD_COMMON
+
 endchoice
 
 config SYS_SOC
@@ -194,6 +200,7 @@ source "board/raidsonic/ib62x0/Kconfig"
 source "board/Seagate/dockstar/Kconfig"
 source "board/Seagate/goflexhome/Kconfig"
 source "board/Seagate/nas220/Kconfig"
+source "board/qnap/ts212/Kconfig"
 source "board/zyxel/nsa310s/Kconfig"
 source "board/zyxel/nsa325/Kconfig"
 source "board/alliedtelesis/SBx81LIFKW/Kconfig"

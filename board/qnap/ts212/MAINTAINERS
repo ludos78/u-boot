@@ -1,0 +1,5 @@
+QNAP-TS21x
+S:	Maintained
+F:	board/qnap/ts212/
+F:	doc/board/qnap/
+F:	configs/qnap-ts212-kw6281_defconfig
